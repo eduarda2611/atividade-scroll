@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html id="top">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Scroll CSS </title>
+	<style type="text/css">
+		html{
+			scroll-behavior: smooth;
+		}
+		a{
+			display: inline-block;
+			width: auto;
+			text-decoration: none;
+			font-size: 1.3em;
+		}
+		nav, scroll-container{
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+		scroll-container{
+			width: 800px;
+			height: auto;
+			position: relative;
+		}
+		scroll-page{
+			border:1px solid blue;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			font-size: 2em;
+			margin: 15px;
+		}
+		#topo{
+			position: absolute;
+			bottom: 15px;
+			right: 25px;
+		}
+		
+	    </style>
+</head>
+<body>
+	<nav>
+		<a href="#page-1">Seção 1</a> |
+		<a href="#page-2">Seção 2</a> |
+		<a href="#page-3">Seção 3</a> |
+	</nav>
+	<scroll-container>
+		<scroll-page id="page-1">
+			<h2> Anne Witch An E </h2> 
+		<hr>
+        “Não é o que o mundo reserva para você, mas o que você traz para o mundo.”
+			<a href="#page-1">Seção 1</a>
+		  </scroll-page>
+	    <scroll-page id="page-2">
+			<h2>O Pequeno Principe</h2> 
+			<hr>
+            "Tu te tornas eternamente responsável por aquilo que cativas.""
+       <a href="#page-2">Seção 2</a>
+	    </scroll-page>
+	    <scroll-page id="page-3">
+			<h2> Anne Frank</h2> 
+			<hr>
+            "O papel tem mais paciência do que as pessoas."
+
+			<a href="#page-3">Seção 3</a>
+	    </scroll-page>
+	    <a id="topo" href="#top">Home</a>
+	</scroll-container>
+</body>
+</html>
